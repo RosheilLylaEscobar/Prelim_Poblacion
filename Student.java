@@ -4,7 +4,7 @@ class Student {
    private String IDnumber;
    private int credits;
    private int points;
-   private double gradePoint;
+   private double gpa;
 
    public Student() {
    }
@@ -47,11 +47,11 @@ class Student {
    @Override
    public String toString() {
        return "ID : " + IDnumber + "redits : " +credits + " Points : " + points + " Grade Point : "
-               + gradePoint;
+               + gpa;
    }
 
    // method to find gradePoint
    public void calculateGradePoint() {
-       gradePoint = points / (double) credits;
+       gpa = points / (double) credits;
    }
 }
